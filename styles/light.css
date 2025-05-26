@@ -29,7 +29,7 @@
   --main-text-color: #353430;
   --decorated-color: #353430;
   --bg-color: #fff1f7;
-  --main-font-family: "IBM Plex Mono", "Monospace";
+  --main-font-family: "IBM Plex Mono", Monospace;
   --main-font-size: 18px;
   --main-font-size-title: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --font-size-standart: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
@@ -46,12 +46,9 @@
     --section-title-color: #353430;
     --theme-menu-button-hover-color: #32312d66;
   }
-
-  .dark-theme__decor {
-    display: none;
   }
-}
 
-.theme-light .dark-theme__decor {
+
+.theme-light .theme__decor {
   display: none;
 }

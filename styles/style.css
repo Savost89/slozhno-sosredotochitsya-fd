@@ -3,7 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   color: var(--page-text-color, #f1b2ce);
-  font: 400 var(--page-font-size, 18px) / var(--page-line-height, 130%) var(--page-font, "IBM Plex Mono", "Monospace");
+  font: 400 var(--page-font-size, 18px) / var(--page-line-height, 130%) var(--page-font, "IBM Plex Mono", Monospace);
   background: 
     var(--page-bg-color, #000028)
     var(--page-bg-image)
@@ -17,7 +17,7 @@
 
 .title {
   color: var(--page-title-color, #db00ff);
-  font: 700 var(--page-title-size, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem))/83% var(--page-font, "IBM Plex mono", "Monospace");
+  font: 700 var(--page-title-size, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem))/83% var(--page-font, "IBM Plex mono", Monospace);
   text-transform: lowercase;
   text-shadow: 4px 4px var(--page-accent-color, #ff0070);
 }
@@ -196,10 +196,6 @@
   margin-block-start: 10px;
 }
 
-.section__second-block {
-  max-height: 1737px;
-}
-
 .list__text-advices{
   padding-block-start: 10px;
 }
@@ -210,10 +206,6 @@
     grid-template-columns: 1fr 2fr;
     row-gap: 20px;
     column-gap: 20px;
-  }
-
-  .section__second-block {
-    max-height: 1296px;
   }
 
   .section_type_what .section__list {
@@ -232,10 +224,6 @@
     column-gap: 10px;
   }
 
-  .section__second-block {
-    max-height: 1015px;
-  }
-
   .section_type_what .section__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -248,14 +236,14 @@
 }
 
 .card_type_text-advices {
-  margin-block-end: 50px;
-  -webkit-margin-after: 50px;  
+  margin-block-end: 0;
+  -webkit-margin-after: 0;  
 }
 
 @media (width >= 768px) {
   .card_type_text-advices {
-    margin-block-end: 60px;
-    -webkit-margin-after: 60px;
+    margin-block-end: 0;
+    -webkit-margin-after: 0;
   }
 }
 
