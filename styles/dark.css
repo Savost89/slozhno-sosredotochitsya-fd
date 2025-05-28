@@ -33,12 +33,9 @@
   --text-color: #f1b2ce;
 }
 
-.page.theme_dark .rec {
-  display: block;
+.theme-dark .theme__decor {
+  display: flex;
 }
 
-@media (prefers-color-scheme: dark) {
-  .rec {
-    display: block;
-  }
-}
+
+
