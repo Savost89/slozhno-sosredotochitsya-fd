@@ -36,9 +36,13 @@
     --section-title-color: #353430;
     --theme-menu-button-hover-color: #32312d66;
   }
+  .theme-auto .theme__decor {
+    display: none;
   }
 
- .theme__decor {
+  }
+
+.theme-light .theme__decor {
   display: none;
 }
 
